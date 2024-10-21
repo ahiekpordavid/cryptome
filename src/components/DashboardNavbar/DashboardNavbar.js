@@ -17,7 +17,7 @@ const DashboardNavbar = () => {
   return (
     <div className="w-full h-max bg-blue-700 flex justify-between text-white py-5 px-[150px] items-center">
       <div className="flex gap-6">
-        <p className="text-3xl font-extrabold">CyrpoMe</p>
+        <p className="text-3xl font-extrabold">CryptoMe</p>
       </div>
       <div className="flex  gap-[50px] items-center">
         <div className="flex  gap-8 items-center ">

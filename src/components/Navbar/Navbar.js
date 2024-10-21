@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-max bg-white flex justify-between text-black py-10 px-[150px] items-center">
       <div className="flex gap-6">
-        <p className="text-3xl font-extrabold">CyrpoMe</p>
+        <p className="text-3xl font-extrabold">CryptoMe</p>
       </div>
       <div className="flex  gap-[50px] items-center">
         <div className="flex gap-8  items-center font-bold">
