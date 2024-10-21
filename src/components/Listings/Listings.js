@@ -29,7 +29,7 @@ const Listings = () => {
                 <img src="chart-btc.png" alt="BTC Chart" width="50" />
               </td> */}
               <td>
-                <button className="trade-btn">Trade</button>
+                <button className="trade-btn">Buy</button>
               </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@ const Listings = () => {
                 <img src="chart-eth.png" alt="ETH Chart" width="50" />
               </td> */}
               <td>
-                <button className="trade-btn">Trade</button>
+                <button className="trade-btn">Buy</button>
               </td>
             </tr>
             <tr>
@@ -65,7 +65,7 @@ const Listings = () => {
                 <img src="chart-trx.png" alt="TRX Chart" width="50" />
               </td> */}
               <td>
-                <button className="trade-btn">Trade</button>
+                <button className="trade-btn">Buy</button>
               </td>
             </tr>
             <tr>
@@ -83,7 +83,7 @@ const Listings = () => {
                 <img src="chart-doge.png" alt="DOGE Chart" width="50" />
               </td> */}
               <td>
-                <button className="trade-btn">Trade</button>
+                <button className="trade-btn">Buy</button>
               </td>
             </tr>
             <tr>
@@ -101,7 +101,7 @@ const Listings = () => {
                 <img src="chart-sol.png" alt="SOL Chart" width="50" />
               </td> */}
               <td>
-                <button className="trade-btn">Trade</button>
+                <button className="trade-btn">Buy</button>
               </td>
             </tr>
           </table>
