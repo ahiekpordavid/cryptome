@@ -1,0 +1,9 @@
+module.exports = {
+    FIREBASE_API_KEY: "AIzaSyDmd8HVjBjPWqdOrdIPwOoUlK_CfCkELM4",
+    FIREBASE_AUTH_DOMAIN: "shinaa-37399.firebaseapp.com",
+    FIREBASE_PROJECT_ID: "shinaa-37399",
+    FIREBASE_STORAGE_BUCKET: "shinaa-37399.appspot.com",
+    FIREBASE_MESSAGING_SENDER_ID: "1039027938124",
+    FIREBASE_APP_ID: "1:1039027938124:web:265588bc08127e9c89a5e9"
+  };
+  
