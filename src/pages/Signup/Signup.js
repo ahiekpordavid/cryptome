@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { auth, db } from "../../firebase/firebase";
 import { useNavigate } from "react-router-dom";
 import { doc, setDoc } from "firebase/firestore";
@@ -82,70 +82,77 @@ const Signup = () => {
   };
   return (
     <div className="w-full flex items-center justify-center h-screen lg:h-[80vh]">
-    <div className="flex flex-col justify-center  w-full md:w-[700px] items-center h-[80vh] lg:h-[80vh]">
-      <form
-        onSubmit={signUp}
-        className="flex flex-col  w-[80%] p-5 md:p-[40px] "
-      >
-        <h1 className="text-2xl font-medium mb-10 text-center">Create a CryptoMe Account</h1>
-        <input
-          type="Full Name"
-          placeholder="Enter your full name"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-          className={
-            "border-1 sm:p-6 p-4 rounded-md my-3" +
-            (fullNameError ? "border-red-500" : "")
-          }
-        ></input>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={
-            "border-1 sm:p-6 p-4 rounded-md my-3" +
-            (emailError ? "border-red-500" : "")
-          }
-        ></input>
-        <input
-          type="Phone Number"
-          placeholder="Enter your phone number"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          className={
-            "border-1 sm:p-6 p-4 rounded-md my-3" +
-            (phoneNumberError ? "border-red-500" : "")
-          }
-        ></input>
-        <input
-          type="password"
-          placeholder="Enter your password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className={
-            "border-1 sm:p-6 p-4 rounded-md my-3" +
-            (passwordError ? "border-red-500" : "")
-          }
-        ></input>
-        <div className="">
-          <button
-            type="submit"
-            style={{ background: "#102B32" }}
-            className=" sm:p-6 p-4 my-3 rounded-md w-full font-semibold text-white"
-          >
-            {loading ? <CircularProgress size={20} sx={{color:"white"}}/> : "Sign Up"}
-          </button>
-          <button
-            type="button"
-            className="  sm:p-6 p-4 my-3 rounded-full w-full font-semibold  "
-            onClick={redirectToSignIn}
-          >
-            Log In
-          </button>
-        </div>
-      </form>
-    </div></div>
+      <div className="flex flex-col justify-center  w-full md:w-[700px] items-center lg:h-[80vh]">
+        <form
+          onSubmit={signUp}
+          className="flex flex-col lg:w-[80%] w-full lg:p-5  md:p-[100px] p-5 lg:gap-5 gap-1 "
+        >
+          <h1 className="md:text-3xl text-xl font-medium mb-10 text-center">
+            Create a CryptoMe Account
+          </h1>
+          <input
+            type="Full Name"
+            placeholder="Enter your full name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            className={
+              "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
+              (fullNameError ? "border-red-500" : "")
+            }
+          ></input>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={
+              "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
+              (emailError ? "border-red-500" : "")
+            }
+          ></input>
+          <input
+            type="Phone Number"
+            placeholder="Enter your phone number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            className={
+              "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
+              (phoneNumberError ? "border-red-500" : "")
+            }
+          ></input>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={
+              "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
+              (passwordError ? "border-red-500" : "")
+            }
+          ></input>
+          <div className="mt-10">
+            <button
+              type="submit"
+              style={{ background: "#102B32" }}
+              className=" sm:p-6 p-4 lg:my-3 my-1 rounded-md w-full font-semibold text-white"
+            >
+              {loading ? (
+                <CircularProgress size={20} sx={{ color: "white" }} />
+              ) : (
+                "Sign Up"
+              )}
+            </button>
+            <button
+              type="button"
+              className="  sm:p-6 p-4 lg:my-3 my-1 rounded-full w-full font-semibold  "
+              onClick={redirectToSignIn}
+            >
+              Log In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
   );
 };
 
