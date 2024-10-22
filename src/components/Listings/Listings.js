@@ -2,17 +2,17 @@ import React from "react";
 
 const Listings = () => {
   return (
-    <div className="w-full py-[80px]">
+    <div className="w-full md:py-[80px] py-[60px]">
       <div>
-        <p className="text-center text-2xl font-semibold pb-5">Top Assets</p>
-        <div  className=" px-[100px]">
-          <table className="text-xl font-medium ">
+        <p className="text-center md:text-2xl text-xl font-semibold pb-5">Top Assets</p>
+        <div  className="px-[20px] md:px-[100px]">
+          <table className="md:text-xl text-sm font-medium ">
             <tr >
               <th className="text-gray-400">Name</th>
               <th className="text-gray-400">Last Price (USD)</th>
               <th className="text-gray-400">Change</th>
               {/* <th>Last 24h</th> */}
-              <th className="text-gray-400">Action</th>
+              <th className="text-gray-400 md:flex hidden">Action</th>
             </tr>
             <tr className="tr">
               <td className="flex items-center justify-center gap-5">
@@ -25,11 +25,9 @@ const Listings = () => {
               </td>
               <td>68127.49</td>
               <td className="negative-change">-0.73%</td>
-              {/* <td>
-                <img src="chart-btc.png" alt="BTC Chart" width="50" />
-              </td> */}
+      
               <td>
-                <button className="trade-btn">Buy</button>
+                <button className="trade-btn md:flex hidden">Buy</button>
               </td>
             </tr>
             <tr>
@@ -43,11 +41,9 @@ const Listings = () => {
               </td>
               <td>2694.10</td>
               <td className="negative-change">-0.42%</td>
-              {/* <td>
-                <img src="chart-eth.png" alt="ETH Chart" width="50" />
-              </td> */}
+        
               <td>
-                <button className="trade-btn">Buy</button>
+                <button className="trade-btn md:flex hidden">Buy</button>
               </td>
             </tr>
             <tr>
@@ -61,11 +57,9 @@ const Listings = () => {
               </td>
               <td>0.157735</td>
               <td className="positive-change">+0.72%</td>
-              {/* <td>
-                <img src="chart-trx.png" alt="TRX Chart" width="50" />
-              </td> */}
+        
               <td>
-                <button className="trade-btn">Buy</button>
+                <button className="trade-btn md:flex hidden">Buy</button>
               </td>
             </tr>
             <tr>
@@ -79,11 +73,9 @@ const Listings = () => {
               </td>
               <td>0.144557</td>
               <td className="positive-change">+4.42%</td>
-              {/* <td>
-                <img src="chart-doge.png" alt="DOGE Chart" width="50" />
-              </td> */}
+      
               <td>
-                <button className="trade-btn">Buy</button>
+                <button className="trade-btn md:flex hidden">Buy</button>
               </td>
             </tr>
             <tr>
@@ -97,11 +89,8 @@ const Listings = () => {
               </td>
               <td>165.1946</td>
               <td className="positive-change">+3.20%</td>
-              {/* <td>
-                <img src="chart-sol.png" alt="SOL Chart" width="50" />
-              </td> */}
               <td>
-                <button className="trade-btn">Buy</button>
+                <button className="trade-btn md:flex hidden">Buy</button>
               </td>
             </tr>
           </table>

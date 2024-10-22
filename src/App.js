@@ -7,12 +7,13 @@ import Navbar from "./components/Navbar/Navbar";
 import { useStateContext } from "./constants/ContextProvider";
 import { Backdrop, CircularProgress } from "@mui/material";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
-  const { authUser, loading } = useStateContext();
+  const { authUser, loading,activeMenu, activeProfile } = useStateContext();
   const renderUnauthenticatedApp = () => (
     <div>
-        <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
@@ -31,11 +32,36 @@ function App() {
     );
   }
   const renderAuthenticatedApp = () => (
-    <div>
-      <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
+    <div className="flex relative dark:bg-main-dark-bg">
+      <div
+        className={`${
+          activeProfile ? "w-full flex bottom-0" : "w-0 hidden "
+        } absolute z-50 sidebar dark:bg-secondary-dark-bg bg-white`}
+      >
+        {/* <Profile /> */}King
+      </div>
+      <div
+        className={`${
+          activeMenu ? "w-72" : "w-0"
+        } fixed sidebar dark:bg-secondary-dark-bg bg-white`}
+      >
+        <Sidebar />
+      </div>
+      <div
+        className={`${
+          activeMenu ? "md:ml-72" : "flex-2"
+        } dark:bg-main-dark-bg bg-white min-h-screen w-full`}
+      >
+        <div className="overflow-y-scroll" style={{ height: "90vh" }}>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </div>
+      </div>
+      <div className="bg-main-bg navbar w-full absolute bottom-0">
+        {/* <BottomNavbar /> */}David
+      </div>
     </div>
   );
   return (

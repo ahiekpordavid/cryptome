@@ -2,17 +2,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-row w-full justify-center items-center bg-slate-50  py-[150px]">
-      <div className="flex flex-col w-[40%] gap-5">
-        <p className="text-[54px] font-bold">
+    <div className="flex lg:flex-row flex-col w-full justify-center items-center bg-slate-50  lg:py-[150px] py-[60px] md:gap-0 gap-10">
+      <div className="flex flex-col w-full lg:w-[40%] gap-5 lg:p-0 md:p-[80px] px-[20px] lg:items-start lg:text-start items-center text-center">
+        <p className="lg:text-[54px] md:text-[48px] text-[32px] font-bold">
           A simple & <br />
           powerful Bitcoin wallet.
         </p>
-        <p className="text-xl">
+        <p className="md:text-xl text-md">
           Secure crypto transactions directly from the CyptoShell Wallet web
           app.
         </p>
-        <p className="border-1 py-3 px-10 bg-blue-700 text-white rounded-3xl cursor-pointer hover:bg-blue-500 w-max">
+        <p className="border-1 py-2 md:py-3 md:px-10 px-6 bg-blue-700 text-white rounded-3xl cursor-pointer hover:bg-blue-500 w-max">
             Get Started
           </p>
       </div>

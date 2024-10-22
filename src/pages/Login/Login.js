@@ -53,20 +53,19 @@ const Login = () => {
   };
 
   return (
-    // <div className="p-2 md:p-5 lg:p-10 flex  w-full">\
       <div className="flex flex-col items-center justify-center h-screen lg:h-[80vh]">
-        <div className="xl:w-[700px] flex flex-col items-center justify-center">
-          <p className=" text-3xl" style={{ color: "#102B32" }}>
+        <div className="xl:w-[700px] w-full flex flex-col items-center justify-center ">
+          <p className=" md:text-3xl text-xl" style={{ color: "#102B32" }}>
             Welcome to CryptoMe
           </p>
-          <form onSubmit={signIn} className="flex flex-col  w-[80%] p-5 md:p-[40px] gap-5">
+          <form onSubmit={signIn} className="flex flex-col  lg:w-[80%] w-full lg:p-5  md:p-[100px] p-5 lg:gap-5 gap-1 ">
             <input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={
-                "border-1 sm:p-6 p-4 rounded-md my-3" +
+                "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
                 (emailError ? "border-red-500" : "")
               }
             ></input>
@@ -77,7 +76,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className={
-                "border-1 sm:p-6 p-4 rounded-md my-3 " +
+                "border-1 sm:p-6 p-4 rounded-md lg:my-3 my-1" +
                 (passwordError ? "border-red-500" : "")
               }
             ></input>
@@ -97,7 +96,7 @@ const Login = () => {
             </div>
             <button
               type="button"
-              className=" sm:p-6 p-4 my-3 rounded-full  font-semibold "
+              className=" sm:p-6 p-4 lg:my-3 my-1 rounded-full  font-semibold "
               onClick={redirectToRegister}
             >
               Sign Up
@@ -105,7 +104,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-    // </div>
+
   );
 };
 
