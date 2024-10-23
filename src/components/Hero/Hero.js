@@ -9,7 +9,7 @@ const Hero = () => {
           powerful Bitcoin wallet.
         </p>
         <p className="md:text-xl text-md">
-          Secure crypto transactions directly from the CyptoShell Wallet web
+          Secure crypto transactions directly from the CriptoMa Wallet web
           app.
         </p>
         <p className="border-1 py-2 md:py-3 md:px-10 px-6 bg-blue-700 text-white rounded-3xl cursor-pointer hover:bg-blue-500 w-max">

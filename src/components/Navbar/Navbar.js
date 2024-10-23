@@ -23,7 +23,7 @@ const Navbar = () => {
           className="md:text-3xl text-xl font-extrabold cursor-pointer"
           onClick={redirectToHome}
         >
-          CryptoMe
+          CriptoMa
         </p>
       </div>
       <div className="md:flex  gap-[50px] items-center hidden relative">
