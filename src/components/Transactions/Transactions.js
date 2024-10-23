@@ -21,8 +21,8 @@ const Transactions = () => {
             </div>
           </div>
           <div>
-            <p className="text-xl">0.018 BTC</p>
-            <p className="text-slate-500 text-sm">$1,200.02</p>
+            <p className="text-xl">0.036 BTC</p>
+            <p className="text-slate-500 text-sm">$2,400.02</p>
           </div>
           <p className="text-xl text-red-700">Failed</p>
         </div>
