@@ -15,7 +15,7 @@ const DashboardNavbar = () => {
           <p
             className=" py-3 px-3 text-black rounded-3xl cursor-pointer "
           >
-            Monica Willson
+            Monica Wilson
           </p>
           <KeyboardArrowDownIcon />
         </div>

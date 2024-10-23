@@ -6,11 +6,11 @@ import Charts from "../../components/Charts/Charts";
 
 const Dashboard = () => {
   return (
-    <div className="bg-slate-100 h-max">
+    <div className="bg-slate-100 h-[100vh]">
       <DashboardNavbar />
       <div className="m-10 ">
         <Balance />
-        <div className="flex flex-row w-full gap-10 h-max">
+        <div className="flex flex-row w-full gap-10 ">
             <div className="w-[50%] h-full">
                 <Charts/>
             </div>

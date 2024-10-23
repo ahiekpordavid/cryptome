@@ -37,15 +37,15 @@ const Balance = () => {
         <div className="p-8 flex flex-col gap-6 bg-slate-100 pr-[100px] rounded-xl">
           <div className="flex flex-col gap-2">
             <p>Total assets</p>
-            <p className="text-2xl font-bold">$93,391.49</p>
+            <p className="text-2xl font-bold">$194,536.86</p>
           </div>
           <div className="flex flex-col gap-2">
             <p>Wallet Balance</p>
-            <p className="text-xl font-medium">$43,391.49</p>
+            <p className="text-xl font-medium">$194,536.86</p>
           </div>
           <div className="flex flex-col gap-2">
             <p>Invested Assets</p>
-            <p className="text-xl font-medium">$3,391.49</p>
+            <p className="text-xl font-medium">$0.30</p>
           </div>
         </div>
 
@@ -74,18 +74,18 @@ const Balance = () => {
               </div>
               <div>
                 <ImportExportIcon className=" text-green-600" />
-                <p className="positive-change">+27%</p>
+                <p className="positive-change">+7%</p>
               </div>
             </div>
             <Divider />
             <div className="flex flex-row justify-between px-8 pb-4">
               <div>
                 <p className="text-xs">Coins</p>
-                <p className="text-xl">0.5468</p>
+                <p className="text-xl">2.90</p>
               </div>
               <div>
                 <p className="text-xs">Value In USD</p>
-                <p className="text-xl text-right">93,384</p>
+                <p className="text-xl text-right">194,536.86</p>
               </div>
             </div>
           </div>
@@ -99,24 +99,24 @@ const Balance = () => {
                   className="w-[40px] h-[40px] object-cover"
                 />
                 <div className="flex flex-col">
-                  <p>EYH</p>
+                  <p>ETH</p>
                   <p className="text-xs">Ethereum</p>
                 </div>
               </div>
               <div>
-                <ImportExportIcon className=" text-red-600" />
-                <p className="negative-change">-0.7%</p>
+                <ImportExportIcon className=" text-gray-600" />
+                <p className="text-gray-600">0.0%</p>
               </div>
             </div>
             <Divider />
             <div className="flex flex-row justify-between px-8 pb-4">
               <div>
                 <p className="text-xs">Coins</p>
-                <p className="text-xl">0.5468</p>
+                <p className="text-xl">0</p>
               </div>
               <div>
                 <p className="text-xs">Value In USD</p>
-                <p className="text-xl text-right">93,384</p>
+                <p className="text-xl text-right">0.00</p>
               </div>
             </div>
           </div>
@@ -130,24 +130,24 @@ const Balance = () => {
                   className="w-[40px] h-[40px] object-cover"
                 />
                 <div className="flex flex-col">
-                  <p>BTC</p>
-                  <p className="text-xs">Bitcoin</p>
+                  <p>LTC</p>
+                  <p className="text-xs">Litecoin</p>
                 </div>
               </div>
               <div>
-                <ImportExportIcon className=" text-red-600" />
-                <p className="negative-change">-27%</p>
+                <ImportExportIcon className=" text-gray-600" />
+                <p className="text-gray-600e">0%</p>
               </div>
             </div>
             <Divider />
             <div className="flex flex-row justify-between px-8 pb-4">
               <div>
                 <p className="text-xs">Coins</p>
-                <p className="text-xl">0.5468</p>
+                <p className="text-xl">0</p>
               </div>
               <div>
                 <p className="text-xs">Value In USD</p>
-                <p className="text-xl text-right">93,384</p>
+                <p className="text-xl text-right">0.00</p>
               </div>
             </div>
           </div>
@@ -161,24 +161,24 @@ const Balance = () => {
                   className="w-[40px] h-[40px] object-cover"
                 />
                 <div className="flex flex-col">
-                  <p>BTC</p>
-                  <p className="text-xs">Bitcoin</p>
+                  <p>TRX</p>
+                  <p className="text-xs">Tron Network</p>
                 </div>
               </div>
               <div>
-                <ImportExportIcon className=" text-green-600" />
-                <p className="positive-change">+27%</p>
+                <ImportExportIcon className=" text-gray-600" />
+                <p className="text-gray-600">0%</p>
               </div>
             </div>
             <Divider />
             <div className="flex flex-row justify-between px-8 pb-4">
               <div>
                 <p className="text-xs">Coins</p>
-                <p className="text-xl">0.5468</p>
+                <p className="text-xl">0</p>
               </div>
               <div>
                 <p className="text-xs">Value In USD</p>
-                <p className="text-xl text-right">93,384</p>
+                <p className="text-xl text-right">0.00</p>
               </div>
             </div>
           </div>
