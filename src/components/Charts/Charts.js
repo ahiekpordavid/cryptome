@@ -16,7 +16,7 @@ const Charts = () => {
     { date: "Oct 20", price: 69020.00 },
     { date: "Oct 21", price: 67376.81 },
     { date: "Oct 22", price: 67388.67 },
-    { date: "Oct 23", price: 66878.36 },
+    { date: "Oct 23", price: 66065.36 },
   ];
   return (
     <div className="h-full bg-white rounded-lg p-10 ">
@@ -26,7 +26,7 @@ const Charts = () => {
         </h2>
         <div className="flex flex-col items-center w-full py-2">
           <p className="text-3xl">
-            <small className="text-slate-500">$</small>66,878.36
+            <small className="text-slate-500">$</small>66,065.36
           </p>
           <p className="text-slate-500">Bitcoin Price</p>
         </div>

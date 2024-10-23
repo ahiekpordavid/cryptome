@@ -37,11 +37,11 @@ const Balance = () => {
         <div className="p-8 flex flex-col gap-6 bg-slate-100 pr-[100px] rounded-xl">
           <div className="flex flex-col gap-2">
             <p>Total assets</p>
-            <p className="text-2xl font-bold">$194,536.86</p>
+            <p className="text-2xl font-bold">$191,536.86</p>
           </div>
           <div className="flex flex-col gap-2">
             <p>Wallet Balance</p>
-            <p className="text-xl font-medium">$194,536.86</p>
+            <p className="text-xl font-medium">$191,536.86</p>
           </div>
           <div className="flex flex-col gap-2">
             <p>Invested Assets</p>
@@ -74,18 +74,18 @@ const Balance = () => {
               </div>
               <div>
                 <ImportExportIcon className=" text-green-600" />
-                <p className="positive-change">+7%</p>
+                <p className="positive-change">+5%</p>
               </div>
             </div>
             <Divider />
             <div className="flex flex-row justify-between px-8 pb-4">
               <div>
                 <p className="text-xs">Coins</p>
-                <p className="text-xl">2.90</p>
+                <p className="text-xl">2.85</p>
               </div>
               <div>
                 <p className="text-xs">Value In USD</p>
-                <p className="text-xl text-right">194,536.86</p>
+                <p className="text-xl text-right">191,536.86</p>
               </div>
             </div>
           </div>
