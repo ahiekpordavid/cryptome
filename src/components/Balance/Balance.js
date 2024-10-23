@@ -11,7 +11,7 @@ const Balance = () => {
     labels: ["BTC","Others"], 
     datasets: [
       {
-        label: "Assets Distribution",
+        label: "100%",
         data: [100,0], 
         backgroundColor: ["blue","grey"],
         borderColor: ["#ffffff"],
@@ -31,7 +31,7 @@ const Balance = () => {
   };
   return (
     <div className="w-full flex flex-col p-10 mb-10 bg-white rounded-xl gap-6">
-      <p className="text-xl font-semibold">Balance Details</p>
+      <p className="text-xl font-semibold text-blue-500">Balance Details</p>
 
       <div className="flex flex-row justify-between gap-10">
         <div className="p-8 flex flex-col gap-6 bg-slate-100 pr-[100px] rounded-xl">
@@ -51,7 +51,7 @@ const Balance = () => {
 
         <div className="p-8 flex flex-col gap-6 bg-slate-100  rounded-xl">
           <div className="flex justify-center items-center">
-            <p className="text-center">Assets Distribution</p>
+            <p className="text-center">Portfolio</p>
             <div className="w-[250px]">
               <Pie data={data} options={options} />
             </div>
