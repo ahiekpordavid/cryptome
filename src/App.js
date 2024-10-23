@@ -52,9 +52,7 @@ function App() {
           </Routes>
         </div>
       </div>
-      <div className="bg-main-bg navbar w-full absolute bottom-0  flex md:hidden">
-        {/* <BottomNavbar /> */}David
-      </div>
+ 
     </div>
   );
   return (
