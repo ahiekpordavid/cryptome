@@ -10,10 +10,10 @@ import { useStateContext } from "../../constants/ContextProvider";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const { activeMenu, setActiveMenu } = useStateContext();
+  const { activeMenu} = useStateContext();
   const navigate = useNavigate();
 
-  const handleActiveMenu = () => setActiveMenu(!activeMenu);
+  // const handleActiveMenu = () => setActiveMenu(!activeMenu);
   const userSignOut = () => {
     signOut(auth)
       .then(() => {
@@ -38,7 +38,7 @@ const Sidebar = () => {
                 <ToggleButton
                   value="center"
                   aria-label="centered"
-                  onClick={handleActiveMenu}
+                  // onClick={handleActiveMenu}
                   sx={{ border: "none" }}
                 >
                   <ReplyOutlinedIcon
@@ -51,12 +51,12 @@ const Sidebar = () => {
             <div className="mt-10 hidden sm:block flex-col ">
               {links.map((item) => (
                 <NavLink
-                  to={`/${item.name}`}
+                  to={""}
                   key={item.name}
-                  style={({ isActive }) => ({
-                    borderLeftColor: isActive ? "white" : "",
-                    borderLeft: isActive ? "2px solid" : "",
-                  })}
+                  // style={({ isActive }) => ({
+                  //   borderLeftColor: isActive ? "white" : "",
+                  //   borderLeft: isActive ? "2px solid" : "",
+                  // })}
                   className={({ isActive }) =>
                     isActive ? activeLink : normalLink
                   }
@@ -69,7 +69,7 @@ const Sidebar = () => {
           <div className="flex justify-center items-center ">
             <div
               onClick={userSignOut}
-              className="font-semibold mb-10 flex items-center justify-center"
+              className="font-semibold mb-10 flex items-center justify-center cursor-pointer"
             >
               <Logout className="text-white" sx={{fontSize:"26px"}} />
             </div>

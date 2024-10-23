@@ -9,20 +9,13 @@ const Dashboard = () => {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    // Timer to show overlay after 30 seconds
     const overlayTimer = setTimeout(() => {
       setShowOverlay(true);
-      
-      // Timer to show loader for 5 seconds
       const loaderTimer = setTimeout(() => {
         setShowLoader(false);
       }, 2000);
-
-      // Cleanup loader timer
       return () => clearTimeout(loaderTimer);
     }, 5000);
-
-    // Cleanup overlay timer
     return () => clearTimeout(overlayTimer);
   }, []);
 
@@ -44,7 +37,6 @@ const Dashboard = () => {
         <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-70 h-screen z-10 flex justify-center items-center">
           {showLoader ? (
             <div className="loader">
-              {/* Replace this div with an actual loader component */}
               <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
             </div>
           ) : (
