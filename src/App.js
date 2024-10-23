@@ -10,7 +10,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
-  const { authUser, loading,activeMenu, activeProfile } = useStateContext();
+  const { authUser, loading,activeMenu } = useStateContext();
   const renderUnauthenticatedApp = () => (
     <div>
       <Navbar />

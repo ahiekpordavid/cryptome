@@ -9,7 +9,7 @@ const Transactions = () => {
 
         <div className="flex flex-row justify-between border-b-1 pb-5 items-center">
           <div className="flex flex-row items-center gap-5 ">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover" alt="up"/>
             <div>
               <p className="text-xl">Sent Bitcoin</p>
               <p className="text-slate-500 text-sm">From:542.....Cvk4e</p>
@@ -24,7 +24,7 @@ const Transactions = () => {
 
         <div className="flex flex-row justify-between border-b-1 py-5 items-center">
           <div className="flex flex-row items-center gap-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover" alt="up"/>
             <div>
               <p className="text-xl">Sent Bitcoin</p>
               <p className="text-slate-500 text-sm">From:542.....Cvk4e</p>
@@ -39,7 +39,7 @@ const Transactions = () => {
 
         <div className="flex flex-row justify-between border-b-1 py-5 items-center">
           <div className="flex flex-row items-center gap-5">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0h0LYCMehv5kF1tThxTzbocjXTD4rIWv5w&s" className="w-[30px] h-[30px] object-cover transform rotate-180"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF0h0LYCMehv5kF1tThxTzbocjXTD4rIWv5w&s" className="w-[30px] h-[30px] object-cover transform rotate-180" alt="down"/>
             <div>
               <p className="text-xl">Recieved Bitcoin</p>
               <p className="text-slate-500 text-sm">From:542.....Cvk4e</p>
@@ -54,7 +54,7 @@ const Transactions = () => {
 
         <div className="flex flex-row justify-between pt-5 items-center">
           <div className="flex flex-row items-center gap-5">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_green_arrow-up.svg/800px-Eo_circle_green_arrow-up.svg.png" className="w-[30px] h-[30px] object-cover" alt="up"/>
             <div>
               <p className="text-xl">Sent Bitcoin</p>
               <p className="text-slate-500 text-sm">From:542.....Cvk4e</p>

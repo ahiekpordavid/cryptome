@@ -1,21 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { signOut } from "firebase/auth";
-import { auth } from "../../firebase/firebase";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
 
 const DashboardNavbar = () => {
-  const navigate = useNavigate();
 
-  const userSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        console.log("sign out successful");
-        navigate("/");
-      })
-      .catch((error) => console.log(error));
-  };
   return (
     <div className="w-full h-max bg-white flex justify-between text-black  py-5 md:px-[60px] px-[20px] items-center shadow-md">
       <div className="flex gap-6">

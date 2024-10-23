@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { links } from "../../constants/dummys";
-import { ToggleButton, ListItemIcon } from "@mui/material";
+import { ToggleButton} from "@mui/material";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import { signOut } from "firebase/auth";
 import { auth } from "../../firebase/firebase";
@@ -10,7 +10,7 @@ import { useStateContext } from "../../constants/ContextProvider";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const { activeMenu, setActiveMenu } = useStateContext();
   const navigate = useNavigate();
 
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
