@@ -10,15 +10,9 @@ import { useStateContext } from "../../constants/ContextProvider";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const { activeMenu, setActiveMenu, screenSize } =
-    useStateContext();
-      const navigate = useNavigate();
+  const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+  const navigate = useNavigate();
 
-  const handleCloseSideBar = () => {
-    if (activeMenu !== undefined && screenSize <= 900) {
-      setActiveMenu(false);
-    }
-  };
   const handleActiveMenu = () => setActiveMenu(!activeMenu);
   const userSignOut = () => {
     signOut(auth)
@@ -30,23 +24,16 @@ const Sidebar = () => {
   };
 
   const activeLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-sm  text-white  text-md m-2";
+    "flex items-center gap-5 pl-4 pt-5 pb-2.5 rounded-xs  text-white  text-md m-2";
   const normalLink =
-    "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2";
+    "flex items-center gap-5 pl-4 pt-5 pb-2.5 rounded-xs text-md text-white dark:text-gray-200 dark:hover:text-black hover:border-l-1 m-2";
 
   return (
-    <div className=" h-screen sm:overflow-hidden overflow-auto sm:hover:overflow-auto pb-10 ">
+    <div className=" h-screen sm:overflow-hidden overflow-auto sm:hover:overflow-auto pb-10 bg-blue-900 text-white">
       {activeMenu && (
         <div className="justify-between flex flex-col h-full">
           <div>
-            <div className="flex justify-between items-center w-72 bg-white p-6">
-              <Link
-                to="/dashboard"
-                onClick={handleCloseSideBar}
-                className="items-center gap-3 ml-3 mt-4 mb-4 flex text-xl font-extrabold tracking-tight text-white"
-              >
-                <p className="greatVibes text-5xl"style={{color:"#102B32"}}>Shinaa</p>
-              </Link>
+            <div className="flex justify-between items-center w-max bg-blue-900 p-6">
               <div className="md:hidden">
                 <ToggleButton
                   value="center"
@@ -67,27 +54,25 @@ const Sidebar = () => {
                   to={`/${item.name}`}
                   key={item.name}
                   style={({ isActive }) => ({
-                    background: isActive
-                      ? "linear-gradient(90deg, #102B32 0%, #205765 50%, #519EB1 100%)"
-                      : "",
+                    borderLeftColor: isActive ? "white" : "",
+                    borderLeft: isActive ? "2px solid" : "",
                   })}
                   className={({ isActive }) =>
                     isActive ? activeLink : normalLink
                   }
                 >
                   {item.icon}
-                  <span className="capitalize p-2">{item.name}</span>
                 </NavLink>
               ))}
             </div>
           </div>
-          <div className="flex justify-center">
-            <button onClick={userSignOut} className="font-semibold mb-10 flex items-center">
-              <ListItemIcon>
-                <Logout />
-              </ListItemIcon>
-              Sign Out
-            </button>
+          <div className="flex justify-center items-center ">
+            <div
+              onClick={userSignOut}
+              className="font-semibold mb-10 flex items-center justify-center"
+            >
+              <Logout className="text-white" sx={{fontSize:"26px"}} />
+            </div>
           </div>
         </div>
       )}

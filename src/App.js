@@ -15,7 +15,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
@@ -35,31 +35,24 @@ function App() {
     <div className="flex relative dark:bg-main-dark-bg">
       <div
         className={`${
-          activeProfile ? "w-full flex bottom-0" : "w-0 hidden "
-        } absolute z-50 sidebar dark:bg-secondary-dark-bg bg-white`}
-      >
-        {/* <Profile /> */}King
-      </div>
-      <div
-        className={`${
-          activeMenu ? "w-72" : "w-0"
+          activeMenu ? "w-20" : "w-0"
         } fixed sidebar dark:bg-secondary-dark-bg bg-white`}
       >
         <Sidebar />
       </div>
       <div
         className={`${
-          activeMenu ? "md:ml-72" : "flex-2"
+          activeMenu ? "md:ml-20" : "flex-2"
         } dark:bg-main-dark-bg bg-white min-h-screen w-full`}
       >
-        <div className="overflow-y-scroll" style={{ height: "90vh" }}>
+        <div className="overflow-y-scroll" style={{ height: "100vh" }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </div>
       </div>
-      <div className="bg-main-bg navbar w-full absolute bottom-0">
+      <div className="bg-main-bg navbar w-full absolute bottom-0  flex md:hidden">
         {/* <BottomNavbar /> */}David
       </div>
     </div>
@@ -67,7 +60,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {authUser ? renderAuthenticatedApp() : renderUnauthenticatedApp()}
+        {authUser ? renderAuthenticatedApp():renderUnauthenticatedApp()}
       </BrowserRouter>
     </div>
   );

@@ -5,15 +5,15 @@ import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 export const links = [
   {
     name: "dashboard",
-    icon: <DashboardCustomizeOutlinedIcon  style={{ fontSize: "18px" }}/>,
+    icon: <DashboardCustomizeOutlinedIcon  style={{ fontSize: "26px" }}/>,
   },
   {
     name: "Customers",
-    icon: < GroupOutlinedIcon style={{ fontSize: "18px" }}/>,
+    icon: < GroupOutlinedIcon style={{ fontSize: "26px" }}/>,
   },
   {
     name: "Orders",
-    icon: < InventoryOutlinedIcon style={{ fontSize: "18px" }}/>,
+    icon: < InventoryOutlinedIcon style={{ fontSize: "26px" }}/>,
   }
 ];
 
