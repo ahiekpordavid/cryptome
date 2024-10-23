@@ -34,13 +34,13 @@ const Dashboard = () => {
       </div>
 
       {showOverlay && (
-        <div className="absolute top-0 bottom-0 left-0 right-0 bg-black opacity-70 h-screen z-10 flex justify-center items-center">
+        <div className="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-70 h-screen z-10 flex justify-center items-center">
           {showLoader ? (
             <div className="loader">
               <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
             </div>
           ) : (
-            <div className="bg-white p-5 rounded shadow-lg ">
+            <div className="bg-white p-5 rounded shadow-lg bg-opacity-100">
               <p className="text-black text-center">
                 Hello Monica, Please be informed that a tax payment of <strong className="font-bold text-lg">$12,984</strong> is due.<br />
                 Kindly make the payment to regain access to your account.<br />
